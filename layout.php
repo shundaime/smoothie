@@ -67,10 +67,10 @@
                 </section>
 
 				<section id="promotion">
-					<h1><a href="#">Un bon smoothie se partage!</a></h1>
+					<h1><a href="#">Du nouveau par ici!</a></h1>
                     <div class="promotionContent">
                         <ul>
-                            <li><a href="#"><h3>Envie d'un smoothie 100% artisanal?</h3></a></li>
+                            <li><a href="#"><h3>Smoothie du jour</h3></a></li>
                             <li><a href="#"><img src="http://placehold.it/200x200"></a></li>
                             <li><p>Cuius generis est magna penuria. Et iudicare difficile est sane nisi expertum; experiendum autem est in ipsa amicitia. Ita praecurrit amicitia iudicium tollitque experiendi potestatem.</p></li>
 							<li><a href="#"><p class="clickUp">Voir les smoothies!</p></a></li>
