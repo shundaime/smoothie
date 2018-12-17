@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Lun 17 Décembre 2018 à 12:52
+-- Généré le :  Lun 17 Décembre 2018 à 14:28
 -- Version du serveur :  5.7.24-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.32-0ubuntu0.16.04.1
 
@@ -56,8 +56,21 @@ CREATE TABLE `product` (
   `id` int(5) NOT NULL,
   `nameProduct` varchar(50) NOT NULL,
   `picture` text NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `ingredients` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `product`
+--
+
+INSERT INTO `product` (`id`, `nameProduct`, `picture`, `description`, `ingredients`) VALUES
+(1, 'zen', '<img src="assets/photos/nos-jus-zen.jpg>', 'pomme, épinard, kale, carotte, citron, estragon, gingembre', ''),
+(2, 'beautiful', '<img src="assets/photos/nos-jus-beautiful.jpg>', 'raisin, carotte, betterave, céleri, citron', ''),
+(3, 'young', '<img src="assets/photos/nos-jus-young.jpg">', 'carotte, pomme, fenouil, navet, jus d\'aloe vera, raisin', ''),
+(4, 'good', '<img src="assets/photos/nos-jus-good.jpg">', 'concombre, kiwi, pomme, brocoli, menthe, citron', ''),
+(5, 'pulse', '<img src="assets/photos/nos-jus-pulse.jpg">', 'betterave, carotte, pomme, citron, gingembre', ''),
+(6, 'detox', '<img src="assets/photos/nos-jus-detox.jpg">', 'pomme, concombre, fenouil, épinard, citron, céleri', '');
 
 -- --------------------------------------------------------
 
@@ -84,7 +97,9 @@ CREATE TABLE `user` (
   `password` varchar(70) NOT NULL,
   `firstName` varchar(30) NOT NULL,
   `name` varchar(30) NOT NULL,
-  `birthDate` date NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `zipCode` varchar(5) NOT NULL,
+  `city` varchar(30) NOT NULL,
   `Creation_time_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -139,7 +154,7 @@ ALTER TABLE `comment`
 -- AUTO_INCREMENT pour la table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `receipe`
 --

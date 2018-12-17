@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%; 
+}
+
+body {
+    font-size: 1.6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.clickUp {
+    background-color: #64b5f6;
+}
+/* HEADER ***********/
+header {
+    background-color: #ffa000;
+
+}
+header img {
+    width: 150px;
+}
+
+/* MAIN ****************************************************/
+/* SERVICES ***********/
+#myServices {
+    background-color: #eceff1;
+}
+/* PRMOTION ***********/
+#promotion {
+    background-color: #ffd54f;
+}
+
+/* PRODUCTS ***********/
+#products {
+    background-color:  #eceff1;
+}
+
+/* ARTICLES **********/
+#articles {
+    background-color: #ffd54f;
+}
+
+/* FOOTER ***********/
+footer {
+    background-color: lightgray;
+}
+footer img {
+    width: 100px
+}
