@@ -24,12 +24,15 @@ html {
 
 body {
     font-size: 1.6rem;
-    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 0;
+    font-family:'Nunito', sans-serif;
 }
-
+.container {
+    padding: 0 10px 40px 10px;
+    margin: 0 auto;
+}
 img {
     max-width: 100%;
 }
@@ -39,17 +42,38 @@ a {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
-.clickUp {
-    background-color: #64b5f6;
-    width: 150px;
-    padding: 5px 20px;
-    margin: 0 auto;
+
+
+h1, h2, h3 {
+    color: #51A239;
+}
+
+h1 {
+    padding: 80px 0;
+    margin: 0 2em;
 }
 
 h2 {
     font-family: 'Smoothie Shoppe';
+    padding: 80px 0 40px 0;
+    font-size: 3rem;
+    margin: 0;
+    border-top: 1px solid #9e9e9e;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+p {
+    color: #212121;
+}
+
+.last-products, .categories {
+    padding-bottom: 40px;
 }
 /* HEADER ***********/
 header {
@@ -57,52 +81,90 @@ header {
     background-size: cover;
     background-repeat:no-repeat;
 }
-
+nav {
+    padding-bottom: 20px;
+}
+header img {
+    padding-top: 20px;
+}
+header a {
+    color: white;
+}
+header li {
+    padding: 5px 0;
+}
 
 
 /* MAIN ****************************************************/
-#main-container {
-    padding: 15px 30px;
-}
-section ul {
-    padding: 0;
-}
-/* SERVICES ***********/
-#myServices {
-    background-color: #eceff1;
-}
-/* PRMOTION ***********/
-#promotion {
-    background-color: #ffd54f;
-}
+/* PETITS DERNIERS **********/
 
-/* PRODUCTS ***********/
-#products {
-    background-color:  #eceff1;
-}
-
-/* ARTICLES **********/
-#articles {
-    background-color: #ffd54f;
+.last-products img {
+    width: 280px;
 }
 .nous li img{
     width: 50%;
     border-radius: 5em;
     border: solid black; 
 }
+article {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
 
 
+/* CATEGORIES *******/
+.categories img {
+    width: 175px;
+}
 /* FOOTER ***********/
 footer {
-    background-color: lightgray;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/headerVincent/image-header.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 10px 0;
 }
 footer img {
     width: 100px
 }
+footer p {
+    color: white;
+    font-size: 0.95rem;
+}
+
+/* MEDIA QUERY ************************************/
 
 
-@media screen and (min-width:720px){
+@media screen and (min-width:768px){
 
+/* HOME ***************************/
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+/* header ***********/
+header {
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+/* last products ****/
+.last-products, .categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    flex-basis: 100%;
+}
+article {
+    flex: 1;
+}
+.categories {
+    align-items: flex-end;
+}
+/* NOTRE CONCEPT ******************/
 .nous{
     display: flex;
 }
@@ -114,5 +176,13 @@ footer img {
 .concept img{
     
     max-width: 20em;
+}
+
+/* footer *****************/
+footer p {
+    font-size: 1.3rem;
+}
+footer img {
+    width: 140px;
 }
 }
