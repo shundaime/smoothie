@@ -22,7 +22,7 @@ function allProducts(){
                 img = "<img src='"+ data.allProducts[i]['picture'] + "' alt='image smoothie' >";
                 description = data.allProducts[i]['description'];
 
-                $('section').append("<article>"+ img + "<h2>"+name+"</h2><p>"+ description +"</p><a class='link' href='product.html?id="+data.allProducts[i]['id']+"'>"+"Voir le produit </a> </article>");            }
+                $('section').append("<article>"+ img + "<h2>"+name+"</h2><p>"+ description +"</p><a class='link' href='productById.html?id="+data.allProducts[i]['id']+"'>"+"Voir le produit </a> </article>");            }
         }      
 
     });
