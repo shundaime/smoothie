@@ -1,3 +1,19 @@
+/*FONT FACE*/
+
+@font-face {
+    font-family: 'Smoothie Shoppe';
+    src: url('../css/font/Smoothie_Shoppe.eot');
+    src: url('../css/font/Smoothie_Shoppe.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Smoothie_Shoppe.woff2') format('woff2'),
+        url('..css/font/Smoothie_Shoppe.woff') format('woff'),
+        url('../css/font/Smoothie_Shoppe.ttf') format('truetype'),
+        url('../css/font/Smoothie_Shoppe.svg#Smoothie_Shoppe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -11,6 +27,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 0;
 }
 
 img {
@@ -26,17 +43,30 @@ ul {
 }
 .clickUp {
     background-color: #64b5f6;
+    width: 150px;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Smoothie Shoppe';
 }
 /* HEADER ***********/
 header {
-    background-color: #ffa000;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/headerVincent/image-header.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
 
-}
-header img {
-    width: 150px;
-}
+
 
 /* MAIN ****************************************************/
+#main-container {
+    padding: 15px 30px;
+}
+section ul {
+    padding: 0;
+}
 /* SERVICES ***********/
 #myServices {
     background-color: #eceff1;
