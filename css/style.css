@@ -12,8 +12,6 @@
     font-style: normal;
 }
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -29,10 +27,12 @@ body {
     padding: 0;
     font-family:'Nunito', sans-serif;
 }
+
 .container {
     padding: 0 10px 40px 10px;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
 }
@@ -46,14 +46,16 @@ ul {
     padding: 0;
 }
 
-
 h1, h2, h3 {
     color: #51A239;
 }
 
 h1 {
+    letter-spacing: 0.3rem;
+    font-size: 3.3rem;
     padding: 80px 0;
     margin: 0 2em;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -68,6 +70,7 @@ h3 {
     margin: 0;
     padding: 10px 0;
 }
+
 p {
     color: #212121;
 }
@@ -75,21 +78,34 @@ p {
 .last-products, .categories {
     padding-bottom: 40px;
 }
+
 /* HEADER ***********/
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/headerVincent/image-header.jpg");
     background-size: cover;
     background-repeat:no-repeat;
 }
+
 nav {
     padding-bottom: 20px;
 }
+
+nav a {
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding-top: 20px;
+}
+
 header img {
     padding-top: 20px;
 }
+
 header a {
     color: white;
 }
+
 header li {
     padding: 5px 0;
 }
@@ -101,21 +117,184 @@ header li {
 .last-products img {
     width: 280px;
 }
+
 .nous li img{
     width: 50%;
     border-radius: 5em;
     border: solid black; 
 }
+
 article {
     margin-bottom: 40px;
     padding: 0 20px;
 }
 
-
 /* CATEGORIES *******/
 .categories img {
     width: 175px;
 }
+
+/* LOGIN *************/
+.form-signin .form-group input {
+    margin: 30px 0 0 0;
+}
+
+.form-check-label {
+    font-size: 1.2rem;
+}
+
+#submit, #submitForm {
+    background-color: #51A239;
+    border: none;
+}
+
+.signin-container {
+    padding: 0 15px;
+    background-color: #DDD;
+}
+
+#signin-container h1 {
+    margin: 0;
+}
+
+/* NOTRE CONCEPT ******************/
+.nous li img{
+    width: 50%;
+    border-radius: 5em;
+}
+
+.nous li img:hover{
+    animation: bounce 0.35s ease infinite alternate;
+}
+
+article {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.concept1 img, .concept2 img{
+    padding: 2em;
+}
+
+.concept1 p, .concept2 p{
+    text-align: justify;
+}
+
+/* BOUNCE **********************************/
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+/****************
+TOUS LES PRODUITS
+*****************/
+
+#allProducts h1{
+    font-family: 'Smoothie Shoppe';
+    padding-bottom: 40px;
+}
+
+#allProducts img{
+    margin-top: 40px;
+}
+
+#allProducts h2{
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#allProducts p{
+    margin: 20px 0;
+}
+
+#allProducts .link{
+    display: inline-block;
+    padding: 15px;
+    background: #51A239;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#allProducts .link:hover{
+    background: #232323;
+    text-decoration: none;
+}
+
+/* CONTACT ***********/
+#contact {
+    width:100%; 
+    height:100%; 
+    margin: 0 auto; 
+    background: #DDD; 
+    padding-bottom: 80px;
+}
+
+.container {
+    height:auto; 
+    margin: 0 auto; 
+}
+
+#contact .container form input,
+#contact .container form textarea {
+	width:97.4%;
+	height:30px;
+	padding:5px 10px;
+	font-size: 12px;
+	color:#999;
+	letter-spacing:1px;
+	background: #FFF;
+	border:2px solid #FFF;
+	margin-bottom:25px;
+    -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:2px solid #51A239;
+	color:#999;}
+
+#contact .container form textarea {
+	height:150px;}
+
+#contact .container form .submit {
+	width: 150px;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:#51A239;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+	border:2px solid #51A239;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+    transition:all .1s ease-in-out;
+}
+
+#contact .container form .submit:hover {
+	color:#FFF;
+	border:2px solid #1faa00;
+	background: #1faa00;
+	cursor:pointer;}
+
+#contact .container form .required {
+    color:#b43838;
+}
+
+#adresse {
+    padding-bottom: 80px;
+}
+
+
+/* MEDIA QUERY ************************************/
 /* FOOTER ***********/
 footer {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/headerVincent/image-header.jpg");
@@ -123,9 +302,11 @@ footer {
     background-repeat:no-repeat;
     padding: 10px 0;
 }
+
 footer img {
     width: 100px
 }
+
 footer p {
     color: white;
     font-size: 0.95rem;
@@ -141,29 +322,58 @@ footer p {
     margin: 0 auto;
     padding: 0;
 }
+
 /* header ***********/
 header {
     display: flex;
     flex-direction: column;
 }
-nav ul {
+
+.user-area {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 8px;
+}
+
+.user-area ul {
     display: flex;
     justify-content: space-around;
 }
+
+.user-area ul li {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+nav {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* last products ****/
 .last-products, .categories {
     display: flex;
     flex-wrap: wrap;
 }
+
 h2 {
     flex-basis: 100%;
 }
+
 article {
     flex: 1;
 }
+
 .categories {
     align-items: flex-end;
 }
+
 /* NOTRE CONCEPT ******************/
 .nous{
     display: flex;
@@ -173,16 +383,143 @@ article {
     display: flex;
     flex-wrap: wrap;
 }
+
 .concept img{
     
     max-width: 20em;
+}
+
+/*TOUS LES PRODUITS*******************/
+
+#allProducts section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#allProducts h1{
+    flex-basis: 100%;
+}
+
+#allProducts article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 auto;
+    width : 30%;
+    
+}
+
+#allProducts .link{
+    width: 150px;
+}
+
+/* Login ******************/
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 80px 0;
+    padding:0 80px 20px 0 20px;
+}
+
+.signin-container {
+    margin-right: 60px;
+}
+
+#email {
+    margin-top: 24px;
+}
+
+#password {
+    margin-top: 33px;
+}
+
+.form-control {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:768px){
+
+    /* HOME ***************************/
+    
+    /* NOTRE CONCEPT ******************/
+    .nous{
+        display: flex;
+        padding: 3em;
+    }
+    
+    .concept1, .concept2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .concept1 h3, .concept2 h3{
+        flex-basis: 100%;
+    }
+
+    .concept1 h3::before, .concept1 h3::after{
+        content:" - ";
+    }
+
+    .concept2 h3::before, .concept2 h3::after{
+        content:" - ";
+    }
+
+    .concept1 p, .concept2 p{
+        line-height: 1.8em;
+        padding: 2em;
+    }
+
+    .concept1 img, .concept1 p, .concept2 img, .concept2 p{
+        flex: 1;
+        max-width: 32em;
+    }
+    
+    .concept1 img, .concept2 img{
+        width: 300px;
+    }
+    
+    .concept2{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .concept2 img{
+        width: 325px;
+        padding: 0;
+    }
+
+
+/* Contact ****************/
+.main-contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact, #adresse {
+    flex: 1;
+}
+
+#adresse h2 {
+    border: none;
+    padding-top: 20px;
+}
+
+#contact form {
+    padding: 0 80px;
+}
+
+.map{
+    flex-basis: 100%;
 }
 
 /* footer *****************/
 footer p {
     font-size: 1.3rem;
 }
+
 footer img {
     width: 140px;
 }
+
 }

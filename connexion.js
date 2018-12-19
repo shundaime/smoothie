@@ -18,9 +18,8 @@ function userConnexion(e){
                 dataType: 'json',
                 data: {email: email, password: password},
                 success: function(data){
-                    if(data.reponse == true){
-                        document.location.href="index.html"
-                        //$(".form-signin").html('<div class="alert alert-success" role="alert">Connexion réussie !</div>');
+                    if(data.reponse){
+                        document.location.href="index.php"
                     } else {
                         $('<div class="alert alert-danger" role="alert">Identifiants incorrects</div>').insertAfter("h1"); 
                     }

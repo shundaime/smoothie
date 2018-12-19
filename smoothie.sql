@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 19 Décembre 2018 à 11:43
+-- Généré le :  Mer 19 Décembre 2018 à 16:11
 -- Version du serveur :  5.7.24-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.32-0ubuntu0.16.04.1
 
@@ -29,17 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `categorie` (
   `id` int(5) NOT NULL,
   `libelle` varchar(30) NOT NULL,
-  `picture` text NOT NULL
+  `icone` text NOT NULL,
+  `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `categorie`
 --
 
-INSERT INTO `categorie` (`id`, `libelle`, `picture`) VALUES
-(1, 'fruit', 'fruit.png'),
-(2, 'legume', 'legume.png'),
-(3, 'sport', 'sport.png');
+INSERT INTO `categorie` (`id`, `libelle`, `icone`, `description`) VALUES
+(1, 'fruit', 'fruit.png', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius sunt, aliquam culpa iusto libero.'),
+(2, 'legume', 'legume.png', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius sunt, aliquam culpa iusto libero.'),
+(3, 'sport', 'sport.png', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius sunt, aliquam culpa iusto libero.');
 
 -- --------------------------------------------------------
 
