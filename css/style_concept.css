@@ -1,0 +1,73 @@
+
+/* NOTRE CONCEPT ******************/
+.nous li img{
+    width: 50%;
+    border-radius: 5em;
+}
+.nous li img:hover{
+    animation: bounce 0.35s ease infinite alternate;
+}
+article {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+.concept1 img, .concept2 img{
+    padding: 2em;
+}
+.concept1 p, .concept2 p{
+    text-align: justify;
+}
+
+/* BOUNCE **********************************/
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+/* MEDIA QUERY ************************************/
+
+
+@media screen and (min-width:768px){
+
+/* HOME ***************************/
+
+/* NOTRE CONCEPT ******************/
+.nous{
+    display: flex;
+    padding: 3em;
+}
+
+.concept1, .concept2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.concept1 h3, .concept2 h3{
+    flex-basis: 100%;
+}
+.concept1 h3::before, .concept1 h3::after{
+	content:" - ";
+}
+.concept2 h3::before, .concept2 h3::after{
+	content:" - ";
+}
+.concept1 p, .concept2 p{
+    line-height: 1.8em;
+    padding: 2em;
+}
+.concept1 img, .concept1 p, .concept2 img, .concept2 p{
+    flex: 1;
+    max-width: 32em;
+}
+
+.concept1 img, .concept2 img{
+    width: 300px;
+}
+
+.concept2{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.concept2 img{
+    width: 325px;
+    padding: 0;
+}
+
